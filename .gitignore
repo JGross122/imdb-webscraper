@@ -13,7 +13,8 @@ Thumbs.db
 
 # ---- Databases / Local data ----
 *.db
-resources/*.db
+!/resources/
+!resources/.gitkeep
 
 # ---- Environment / secrets ----
 .env
