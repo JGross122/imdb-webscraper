@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IMDB Webscraper</title>
+</head>
+<body>
+  <h1>IMDB Webscraper</h1>
+
+  <form action="{{ url_for('run_scraper') }}" method="POST">
+    <button type="submit">Run IMDB Scraper</button>
+  </form>
+
+  <a href="{{ url_for('history') }}">
+    <button type="button">View Saved Data</button>
+  </a>
+</body>
+</html>

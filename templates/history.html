@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>History of saved data</title>
+</head>
+<body>
+    <a href="/">
+        <button>Go Back</button>
+    </a>
+    <br>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>Ranking</td>
+        <td>Timestamp</td>
+    </tr>
+    <br>
+  {% for id, title, ranking, date in rows %}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{title}}</td>
+        <td>{{ranking}}</td>
+        <td>{{date}}</td>
+    </tr>
+    <br>
+  {% endfor %}
+</body>
+</html>

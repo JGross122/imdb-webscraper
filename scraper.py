@@ -20,6 +20,7 @@ def scraper_IMDB():
     else:
         print("Failed to fetch page: ", response.status_code)
         print("Exiting the script...")
+        return f"Failed to fetch page: {response.status_code}"
         exit()
 
 
@@ -49,16 +50,5 @@ def scraper_IMDB():
     print("Comitting to " + database_path_imdb + "...")
     con.commit()
     print("Closing " + database_path_imdb + "...")
-    #con.close()
-
-    print("Database:")
-    cur.execute("SELECT * FROM movie")
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
     con.close()
-
-scraper_IMDB()
-
-# todo:
-# switch from txt files to sqlite3
+    return f"Scraping and saving successfull!"
