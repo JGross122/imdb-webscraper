@@ -1,0 +1,24 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+
+# ---- Operating System junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Databases / Local data ----
+*.db
+resources/*.db
+
+# ---- Environment / secrets ----
+.env
+*.key
+*.pem
+
+# ---- Logs / temporary files ----
+*.log
