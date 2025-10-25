@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Panchang';
+  src: url('fonts/Panchang-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tanker';
+  src: url('fonts/Tanker-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+    font-weight: 800;
+}
+table{
+    font-family: 'Tanker', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #234C6A;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+th{
+    background-color: #1A2B42;
+}
+th, td{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px;
+    width: 25% ;
+}
+tr th:last-child, tr td:last-child {
+  border-right: none;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+body{
+    margin: 0;
+    font-family: 'Panchang', sans-serif;
+}
+.main{
+    background-color: #1B3C53;
+    color: #D2C1B6;
+    font-weight: 400;
+}
+.center-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+}
+.footer{
+    background-color: #0A1620;
+    color: #D2C1B6;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-top: 1px solid #C1B1A5;
+}
+button{
+    border-radius: 5px;
+    font-family: 'Panchang', sans-serif;
+    font-weight: 400;
+    background-color: #1A2B42;
+    color: #D2C1B6;
+}

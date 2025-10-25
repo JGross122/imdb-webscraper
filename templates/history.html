@@ -2,27 +2,33 @@
 <html>
 <head>
   <title>History of saved data</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+  <div class="main">
     <a href="/">
         <button>Go Back</button>
     </a>
-    <br>
-    <tr>
-        <td>ID</td>
-        <td>Title</td>
-        <td>Ranking</td>
-        <td>Timestamp</td>
-    </tr>
-    <br>
-  {% for id, title, ranking, date in rows %}
-    <tr>
-        <td>{{id}}</td>
-        <td>{{title}}</td>
-        <td>{{ranking}}</td>
-        <td>{{date}}</td>
-    </tr>
-    <br>
-  {% endfor %}
-</body>
+    <br><br><br>
+    <table>
+      <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Ranking</th>
+          <th>Timestamp</th>
+      </tr>
+      {% for id, title, ranking, date in rows %}
+      <tr>
+          <td>{{id}}</td>
+          <td>{{title}}</td>
+          <td>{{ranking}}</td>
+          <td>{{date}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <div class="footer">
+      Made by JGross122
+    </div>
+  </div>
+<body>
 </html>

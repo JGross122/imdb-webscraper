@@ -2,16 +2,24 @@
 <html>
 <head>
   <title>IMDB Webscraper</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>IMDB Webscraper</h1>
+    <div class="main">
+      <div class="center-page">
+        <h1>IMDB Webscraper</h1>
 
-  <form action="{{ url_for('run_scraper') }}" method="POST">
-    <button type="submit">Run IMDB Scraper</button>
-  </form>
+        <form action="{{ url_for('run_scraper') }}" method="POST">
+          <button type="submit">Run IMDB Scraper</button>
+        </form>
 
-  <a href="{{ url_for('history') }}">
-    <button type="button">View Saved Data</button>
-  </a>
+        <a href="{{ url_for('history') }}">
+          <button type="button">View Saved Data</button>
+        </a>
+      </div>
+      <div class="footer">
+        Made by JGross122
+      </div>
+    </div>
 </body>
 </html>
